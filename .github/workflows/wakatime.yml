@@ -2,7 +2,7 @@ name: Update Wakatime Stats
 
 on:
   schedule:
-    - cron: '0 * * * *' # ตั้งเวลาให้เป็นทุกๆ 1 ชั่วโมง (คุณสามารถปรับเปลี่ยนตามต้องการ)
+    - cron: '0 * * * *' # Set to run every hour
 
 jobs:
   update-readme:
@@ -20,9 +20,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt # สร้าง requirements.txt ถ้าคุณมีไฟล์นี้
+        pip install -r requirements.txt # If you have any dependencies
 
     - name: Run script to update README
-      run: python .github/scripts/update_readme.py # สร้างไฟล์ Python script ที่จะดึงข้อมูลจาก Wakatime และแก้ไข README.md
+      run: python update_readme.py
       env:
         WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
