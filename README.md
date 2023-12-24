@@ -8,6 +8,3 @@
 
 ## My Wakatime Stats
 [![Wakatime Stats](https://github.com/keta410/keta410/workflows/Update%20Wakatime%20Stats/badge.svg)](https://github.com/keta410/keta410/actions)
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
